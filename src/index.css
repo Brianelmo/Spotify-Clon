@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+body {
+    font-family: sans-serif;
+} 
+
+.bg-login {
+    background: rgb(11,234,44);
+    background: linear-gradient(180deg, rgba(11,234,44,1) 0%, rgba(29,27,27,1) 100%);
+}
+
+.bg-playlistzone {
+    background: rgb(18,18,18);
+    background: linear-gradient(0deg, rgba(18,18,18,1) 65%, rgba(121,45,253,0.4430147058823529) 100%);
+} 
+
+.card-home:hover .title-card .button-play{
+    display: block;
+}  
+
+.card-home {
+    background: rgb(167,167,167);
+    background: linear-gradient(0deg, rgba(167,167,167,0.21332282913165268) 100%, rgba(0,0,0,1) 100%);
+} 
+
+.card-home:hover {  
+    background:#fcf9f946;
+    transition: background 0.5s ease;
+} 
+
+.nav-button{
+   display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    opacity: 0.7;
+}
+
+.nav-button:hover{
+    opacity: 1;
+}
+
+.nav-button.active{
+    opacity: 1;
+}
+
+.search.ocultar{
+    display: none;
+}  
+
+.gral-ocultar {
+    display: none;
+}
+
+.button-play {
+    display: none;
+}  
+
+.CardPlaylistZone.ocultar {
+    display: none;
+}
+
+
+.shadow-card {
+    box-shadow: 36px 10px 43px -24px rgba(0,0,0,0.88);
+    -webkit-box-shadow: 36px 10px 43px -24px rgba(0,0,0,0.88);
+    -moz-box-shadow: 36px 10px 43px -24px rgba(0,0,0,0.88);;
+} 
+
+
+.biblio-side::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: transparent;
+} 
+
+.biblio-side::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 5px;
+} 
+
+
+.shadow-image {
+    -webkit-box-shadow: -0.5px 15px 24.5px -7px #000000;
+    -moz-box-shadow: -0.5px 15px 24.5px -7px #000000;
+    box-shadow: -0.5px 15px 24.5px -7px #000000;
+}   
+
+.bg-playlistzoneInfo{
+    background: rgb(18,18,18);
+    background: linear-gradient(0deg, rgba(18,18,18,1) 50%, rgba(121,45,253,0.4430147058823529) 100%);
+}
+
+.bg-playlistInfo {
+    -webkit-box-shadow: 10px 8.5px 32px -2.5px #000000;
+    -moz-box-shadow: 10px 8.5px 32px -2.5px #000000;
+    box-shadow: 10px 8.5px 32px -2.5px #000000;
+} 
+
+.audio {
+    -webkit-box-shadow: 2.5px 14.5px 21.5px -7px #000000;
+-moz-box-shadow: 2.5px 14.5px 21.5px -7px #000000;
+box-shadow: 2.5px 14.5px 21.5px -7px #000000;
+}  
+
+.audio::-webkit-media-controls-play-button {
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 170 61 / var(--tw-bg-opacity));
+    border-radius: 20px;
+
+    
+}
+ 
+.audio::-webkit-media-controls-mute-button {
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 170 61 / var(--tw-bg-opacity));
+    border-radius: 20px;
+} 
+
+.audio::-webkit-media-controls-timeline {
+    color: red;
+} 
+ 
+
+
+
+
+
+
+@media (min-width:1080px) {
+    .biblio-side {
+        width: 26rem;
+    } 
+
+    .featured-playlist {
+        flex-wrap: wrap;
+    } 
+
+    .playlistzone {
+        height: 90vh; 
+        overflow-x: auto;
+    }  
+
+    .nav-phone {
+        display: none;
+    }
+}
+
+
+@media (max-width:920px) {
+    .biblio-side {
+        width: 29vw; 
+        display: none;
+    } 
+    .featured-playlist {
+        display: flex; 
+        flex-wrap: wrap;
+    }  
+
+    .bg-playlistzoneInfo {
+        overflow: auto;
+        width: 100%;
+        height: 100vh;  
+    }
+
+    .playlistzone {
+        overflow: auto;
+        width: 100%;
+        height: 100vh;  
+        margin-left: 2rem;
+    }  
+
+    .navBar {
+        display: none;
+    }
+
+    .card-home {
+        min-width: 10rem;
+        max-width: 28rem;
+    } 
+
+    .bg-playlistzone {
+        width: 100vw; 
+        height: 100vh; 
+    } 
+    
+    .search-zone {
+        width: 100vw;
+        height: 100vh;
+    } 
+
+    
+    
+}  
+
+@media (max-width:768px) {
+    .card-home {
+        width: 20rem;
+    } 
+} 
+
+@media (max-width: 640px) {
+
+    .featured-image {
+        width: 5rem; 
+    } 
+
+    .featured-text {
+        width: 100px;
+    } 
+    .featured-subtext {
+        width: 100px;
+        font-size: 0.8rem;
+    } 
+
+    .album-title {
+        display: none;
+    } 
+
+    .date-title {
+        display: none;
+    } 
+
+    .time-song {
+        display: none;
+    } 
+    
+    .album-name {
+        display: none;
+    } 
+
+    .info-section {
+        display: none;
+    } 
+
+    .text_home {
+        font-size: 1rem;
+    } 
+
+    .text_search {
+        font-size: 1rem; 
+    } 
+
+    .input-search {
+        width: 10rem;
+    }
+    
+}
