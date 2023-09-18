@@ -2,7 +2,7 @@ import FooterLinks from "../components/FooterLinks.tsx";
 
 function Login() {
   const CLIENTE_ID: string = "5f710d05dd4a45bf8e20341ec76a9f87";
-  const REDIRECT_URI: string = "https://spotify-clon-ivory.vercel.app/home";
+  const REDIRECT_URI: string = "https://spotify-clon-ivory.vercel.app";
   const AUTH_ENDPOINT: string = "http://accounts.spotify.com/authorize";
   const RESPONSE_TYPE: string = "token";
 
