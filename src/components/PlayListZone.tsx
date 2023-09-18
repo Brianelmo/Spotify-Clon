@@ -59,7 +59,7 @@ function PlayListZone() {
   }; //Funcion que decide que texto mostrar dependiendo de la pagina en las que estas
 
   return (
-    <div className="rounded playlistzone">
+    <div className="rounded playlistzone">got
       <div className="mb-1 flex items-center">
         <NavBarPlayListZone />
         <div className="flex items-center gap-9 pr-4 tracking-widest">
