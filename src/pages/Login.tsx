@@ -21,7 +21,7 @@ function Login() {
         >
           Iniciar Sesion
         </a>
-        <footer className={"flex gap-10 items-center justify-between"}>
+        <footer className={"flex gap-10 items-center justify-between footer-login"}>
           <p className={"text-white text-xl font-bold"}>
             Desarrollado por Brian Nicolas Elmo
           </p>

@@ -199,6 +199,10 @@ box-shadow: 2.5px 14.5px 21.5px -7px #000000;
         top: 58rem; 
         width: 43.75rem;
         left: 1rem;
+    } 
+     
+    .footer-login {
+        flex-direction: column;
     }
     
 }  
