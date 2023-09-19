@@ -83,9 +83,8 @@ const SongList = ({ data }: dataList) => {
           </div>
         ))}
         {reproduciendo ? (
-          <div className="fixed top-[2rem] rounded-3xl flex justify-center items-center right-[7.5rem] w-[350px]  opacity-60 pt-[20px]">
             <video
-              className="w-[350px] rounded-3xl border-none outline-none h-[50px] audio"
+              className="fixed top-[2rem] right-[7.5rem] w-[350px] opacity-60 pt-[20px]w-[350px] rounded-3xl border-none outline-none h-[50px] audio"
               ref={videoRef}
               controls
               autoPlay 
@@ -93,7 +92,6 @@ const SongList = ({ data }: dataList) => {
               <source src={urlSong} type="audio/mpeg" />
               <source src={urlSong} type="audio/ogg" />
             </video> 
-          </div>
         ) : (
           ""
         )}
