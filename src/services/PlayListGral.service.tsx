@@ -30,6 +30,10 @@ function PlayListGralservice() {
         );
 
         setGralData(response.data);
+
+        if(!setGralData){
+          console.log('no hay datos todavia')
+        }
        
       } catch (error) {
         console.log(error);
