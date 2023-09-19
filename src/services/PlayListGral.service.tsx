@@ -15,11 +15,9 @@ function PlayListGralservice() {
 
 
   useEffect(() => {
+    const token = localStorage.getItem("token");
     const fetchGralData = async () => {
-      const token = localStorage.getItem("token");
-
       try {
-
         const response = await axios.get(
           `https://api.spotify.com/v1/browse/featured-playlists?timestamp=${dia}T${hora}%3A00%3A00&limit=7`,
           {
