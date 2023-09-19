@@ -33,7 +33,7 @@ function CardPlaylistSearch(data: Items) {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <p className=" featured-text text-sm">{item.name}</p>
+            <p className=" featured-text text-sm overflow-hidden whitespace-nowrap overflow-ellipsis w-[150px]">{item.name}</p>
             <p className="featured-subtext text-xs opacity-60">{"De " + item.owner.display_name}</p>
           </div>
         </Link>
