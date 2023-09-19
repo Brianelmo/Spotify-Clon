@@ -14,7 +14,7 @@ function CardPlaylistSearch(data: Items) {
         <Link to={`/playlist/${item.id}`} key={item.id} className="flex flex-col bg-gral-card pt-5 pb-8 px-4 gap-4 rounded-md hover:bg-cardInter cursor-pointer">
           <div className="">
             {item.images.length > 0 ? (
-              <img className="shadow-image w-40 h-40 rounded-md featured-image" src={item.images[0].url} />
+              <img className="shadow-image w-40 h-40 rounded-md search-image" src={item.images[0].url} />
             ) : (
               <div className={" bg-cardInter rounded-md shadow-image w-40 h-40 flex justify-center items-center"}>
               <MusicNoteIcon sx={{ fontSize: '5rem' }} />
